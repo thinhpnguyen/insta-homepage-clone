@@ -32,7 +32,15 @@ body {
   top: 0;
   left: 0;
   visibility: hidden;
+  opacity: 0;
+}
+.last-active {
+  opacity: 0;
+  transition: opacity 1.5s ease-out;
+  visibility: visible;
 }
 .active {
+  opacity: 1;
+  transition: opacity 1.5s ease-in;
   visibility: visible;
 }
